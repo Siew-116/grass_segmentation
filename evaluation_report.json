@@ -1,0 +1,30 @@
+{
+    "generated_at": "2026-03-05 05:31:07",
+    "model": "UNet with MobileNetV2 encoder",
+    "config": {
+        "img_size": [
+            128,
+            128
+        ],
+        "num_classes": 4,
+        "batch_size": 32,
+        "epochs": 20,
+        "loss": "WeightedSparseCategoricalCrossentropy"
+    },
+    "dataset": {
+        "train": 4796,
+        "val": 600,
+        "test": 600
+    },
+    "test_results": {
+        "loss": 0.1019,
+        "accuracy": 0.9373,
+        "mean_iou": 0.4523
+    },
+    "per_class_iou": {
+        "background": 0.9547,
+        "grass_short": 0.4946,
+        "grass_medium": 0.1898,
+        "grass_long": 0.1698
+    }
+}
