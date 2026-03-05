@@ -3,11 +3,11 @@ Use machine learning model to detect length of grass on roadside (short, medium,
 
 ## Dataset
 - 5996 images with ground truth masks
-![Dataset distribution]("class_combination_distribution.png")
+![Dataset distribution](class_combination_distribution.png)
 - splitted into 8:1:1 training, validation and testing sets
-![Splitting distribution]("split_distribution.png")
+![Splitting distribution](split_distribution.png)
 - Example of samples
-![Sample images]("sample_images.png")
+![Sample images](sample_images.png)
 
 ## Model 1: U-Net with MobileNetv2 encoder
 - use class weight to overcome class imbalance 
@@ -15,8 +15,8 @@ Use machine learning model to detect length of grass on roadside (short, medium,
 - input size: (128,128,3)
 - augmentation: random horizontal flip, vertical clip, brightness, contrast, saturation, hue value
 
-![train history 1]("training_history_phase1.png")
-![train history 2]("training_history_phase2.png")
+![train history 1](training_history_phase1.png)
+![train history 2](training_history_phase2.png)
 
 ### Evaluation
 Metrics: Accuracy, IoU (Intersection Over Union), Weighted Sparse Categorical Cross Entropy
@@ -30,6 +30,7 @@ Test Mean IoU : 0.4523
  - grass_medium    : 0.1898
  - grass_long           : 0.1698
 
-![confusion matrix]("confusion_matrix.png")
+![confusion matrix](confusion_matrix.png)
 
-![test pred]("test_predictions.png")
+![test pred](test_predictions.png)
+
